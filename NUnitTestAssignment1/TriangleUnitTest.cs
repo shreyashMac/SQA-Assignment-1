@@ -33,8 +33,8 @@ namespace NUnitTestAssignment1
         [Test]
         public void Test3()
         {
-
-            Assert.AreEqual("Triangle Formed and Triangle is Equlateral", TriangleSolver.analyze(30, 30, 30));
+            
+            Assert.AreEqual("Triangle Formed and Triangle is Equilateral", TriangleSolver.analyze(30, 30, 30));
         }
 
         [Test]
@@ -49,7 +49,7 @@ namespace NUnitTestAssignment1
         public void Test5()
         {
 
-            Assert.AreEqual("Triangle Formed and Triangle is Equlateral", TriangleSolver.analyze(1, 1, 1));
+            Assert.AreEqual("Triangle Formed and Triangle is Equilateral", TriangleSolver.analyze(1, 1, 1));
         }
 
         [Test]
