@@ -7,6 +7,8 @@ namespace Assignment_1SQA
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            MyTriangle mt = new MyTriangle();
+            mt.getTriangleSides();
         }
     }
 }
