@@ -14,7 +14,7 @@ namespace Assignment_1SQA
         {
             do
             {
-                Console.WriteLine(" **** Enter 1 for Triangle**** \n 2 for Exit ");
+                Console.WriteLine(" **** Enter 1 for Triangle**** \n ***** 2 for Exit ****** ");
                 choiceString = Console.ReadLine();
 
 
