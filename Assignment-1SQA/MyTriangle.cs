@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
+
 namespace Assignment_1SQA
 {
-    class MyTriangle
+     public class MyTriangle
     {
         string choiceString,Message;
         int choice, triangleSideA, triangleSideB, triangleSideC;
@@ -25,20 +26,27 @@ namespace Assignment_1SQA
 
                 case 1:
                     string sideA, sideB, sideC;
-                    
-                    Console.WriteLine("Enter Triangle side one:");
-                    sideA = Console.ReadLine();
-                    Int32.TryParse(sideA, out triangleSideA);
 
-                    Console.WriteLine("Enter Triagnle side Two:");
-                    sideB = Console.ReadLine();
-                    Int32.TryParse(sideB, out triangleSideB);
+                    do
+                    {
+                        Console.WriteLine("Enter Triangle side one:");
+                        sideA = Console.ReadLine();
+                    } while (!Int32.TryParse(sideA, out triangleSideA));
 
-                    Console.WriteLine("Enter Triangle side three:");
-                    sideC = Console.ReadLine();
-                    Int32.TryParse(sideC, out triangleSideC);
+                    do
+                    {
+                        Console.WriteLine("Enter Triagnle side Two:");
+                        sideB = Console.ReadLine();
+                    }while(!Int32.TryParse(sideB, out triangleSideB));
 
-                     Message = triangleChecker();
+                    do {
+                        Console.WriteLine("Enter Triangle side three:");
+                        sideC = Console.ReadLine();
+                    }while(!Int32.TryParse(sideC, out triangleSideC));
+
+
+
+                   Message = TriangleSolver.analyze(triangleSideA, triangleSideB, triangleSideC);
                     Console.WriteLine(Message);
 
 
@@ -55,26 +63,7 @@ namespace Assignment_1SQA
 
          }
 
-        public string triangleChecker()
-        {
-
-            if ((triangleSideA + triangleSideB >= triangleSideC) && (triangleSideA + triangleSideC >= triangleSideB)
-
-                && (triangleSideB + triangleSideC >= triangleSideA))
-            {
-
-                return "These Sides can form triangle ";
-
-            }
-
-            else
-            {
-               return  "These Side can not from triangle ";
-            }
-            
-           // return " ";
-
-        }
+      
 
     }
 }

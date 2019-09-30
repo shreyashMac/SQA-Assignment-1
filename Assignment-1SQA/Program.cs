@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Assignment_1SQA
+ namespace Assignment_1SQA
 {
     class Program
     {
