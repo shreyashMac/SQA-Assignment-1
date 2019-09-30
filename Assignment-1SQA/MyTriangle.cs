@@ -14,7 +14,7 @@ namespace Assignment_1SQA
         {
             do
             {
-                Console.WriteLine("1 for Enter Trianle 2 for Exit ");
+                Console.WriteLine(" **** Enter 1 for Triangle**** \n 2 for Exit ");
                 choiceString = Console.ReadLine();
 
 
@@ -29,7 +29,7 @@ namespace Assignment_1SQA
 
                     do
                     {
-                        Console.WriteLine("Enter Triangle side one:");
+                        Console.WriteLine("Enter Triangle side one:\n");
                         sideA = Console.ReadLine();
                     } while (!Int32.TryParse(sideA, out triangleSideA));
 
